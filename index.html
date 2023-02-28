@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MarkGit Cooking | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cooking Website made by using MarkGit, Find the dish that you are looking for.MarkGit uses Github Repo as a Public Database to Store Markdown Files. Retrieve the Files in HTML Format. Get the List of Markdown Files From a Repo."/>
+  <script src="js/fontawesome.js"></script>
+  <script src="js/tailwindcss.js"></script>
+  <script src="js/markgit.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="./css/markdown.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+<div id="homepage" class="flex flex-col w-screen h-screen justify-start md:justify-center items-center pt-10 md:pt-0 ">
+
+  <button 
+    onclick="window.location.href = ''"
+    title="Home Page | Refresh"
+    class="cursor-pointer font-bold 
+    hover:text-sky-300 text-3xl p-5 font-light pb-8 ">
+	<i class="fa-solid fa-book text-xl"></i> Cooking Book 
+  </button>
+
+  <span 
+    onclick="this.classList.toggle('hidden')"
+    class="p-2 bg-black/30 rounded-lg cursor-pointer mb-5 hidden"
+    id="message">
+  </span>
+
+  <div class="flex justify-center items-center pb-8">
+	<input 
+        id="search-recipe"
+	class="bg-gray-800 p-2 font-semibold text-lg focus:outline-none focus:bg-[#12121c]"
+     	type="text"
+	placeholder="Search..."
+	onkeypress="
+	if(event.key == 'Enter'){
+		search_recipe(this.value)
+		this.value = ''
+	}
+		    "
+	>
+	<button
+	    onclick="search_recipe(
+	    document.querySelector('#search-recipe').value
+	    )"
+	  class=" p-2 bg-gray-700 font-semibold text-lg cursor-pointer hover:bg-[#12121c]">
+	  <i class="fa-solid fa-magnifying-glass"></i>
+	</button>
+  </div>
+
+  <div>
+    <span class="text-xl font-semibold pb-2 border-b-2 w-full flex justify-center md:justify-start border-gray-600/60 md:pl-3" id="recipe-type">
+      Popular
+    </span>
+
+  <div
+    id="popular-recipe"
+    class="pt-8 flex flex-wrap gap-5 justify-center items-center p-3">
+
+  </div>
+</div>
+</div>
+
+<div id="render-recipe-container"
+     class="absolute z-[1000] top-0 left-0 w-screen h-screen hidden bg-gray-900 flex flex-col justify-start overflow-x-hidden ">
+  	<button 
+  	class="fixed top-0 left-0 flex bg-[#1f2329] w-full items-center justify-start p-2 "
+  	onclick="
+	  document.querySelector('#render-recipe-container').classList.toggle('hidden');
+	  document.querySelector('#homepage').classList.toggle('hidden')
+	 if(document.title.includes('Search')){
+	  document.title = 'MarkGit | Search'
+	} else {
+	  document.title = 'MarkGit | Popular'
+	}  
+	"
+	>
+	  <span class="pr-3">
+	 	<i class="fa-solid fa-arrow-left"></i> Back
+	  </span>
+	</button>
+
+	<div class="flex flex-col md:mt-[100px]  
+	  md:items-center w-full " id="render">
+	
+	</div>
+
+</div>
+
+</body>
+</html>
+

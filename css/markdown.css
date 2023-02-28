@@ -1,0 +1,217 @@
+#recipe-instructions {
+	width: 700px;
+	max-width: 800px;
+}
+
+/* Headers */
+#recipe-instructions > h1 {
+font-size: 2em;
+font-weight: bold;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+}
+
+#recipe-instructions > h2 {
+font-size: 1.5em;
+font-weight: bold;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+}
+
+#recipe-instructions > h3 {
+font-size: 1.17em;
+font-weight: bold;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+}
+
+#recipe-instructions > h4 {
+font-size: 1em;
+font-weight: bold;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+}
+
+#recipe-instructions > h5 {
+font-size: 0.83em;
+font-weight: bold;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+}
+
+#recipe-instructions > h6 {
+font-size: 0.67em;
+font-weight: bold;
+margin-top: 1.5em;
+margin-bottom: 0.5em;
+}
+
+/* Paragraphs */
+#recipe-instructions > p {
+margin-top: 0;
+margin-bottom: 1em;
+}
+
+/* Links */
+#recipe-instructions > a {
+color: #0077cc;
+text-decoration: none;
+}
+
+#recipe-instructions > a:hover {
+text-decoration: underline;
+}
+
+/* Lists */
+#recipe-instructions > ul, #recipe-instructions > ol {
+margin-top: 0;
+margin-bottom: 1em;
+}
+
+#recipe-instructions > li {
+margin-left: 1.5em;
+}
+
+/* Blockquotes */
+#recipe-instructions > blockquote {
+margin-top: 0;
+margin-bottom: 1em;
+padding-left: 1em;
+}
+
+/* Code blocks */
+#recipe-instructions > pre {
+margin-top: 0;
+margin-bottom: 1em;
+padding: 1em;
+background-color: #f4f4f4;
+border-radius: 4px;
+overflow-x: auto;
+}
+
+#recipe-instructions > code {
+font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+font-size: 0.9em;
+background-color: #f4f4f4;
+border-radius: 4px;
+padding: 0.2em 0.4em;
+}
+
+/* Inline elements */
+
+#recipe-instructions > del {
+text-decoration: line-through;
+}
+#recipe-instructions > img {
+  object-fit: fill;
+  width: inherit;
+  max-height: 400px ;
+}
+
+#recipe-instructions > table {
+border-collapse: collapse;
+width: 100%;
+margin-bottom: 1em;
+}
+
+#recipe-instructions > th, #recipe-instructions > td {
+padding: 0.5em;
+border: 1px solid #ccc;
+}
+
+#recipe-instructions > th {
+font-weight: bold;
+background-color: #f4f4f4;
+}
+
+#recipe-instructions > hr {
+border: none;
+border-top: 1px solid #ccc;
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+#recipe-instructions > a {
+color: #0077cc;
+text-decoration: none;
+}
+
+#recipe-instructions > a:hover {
+text-decoration: underline;
+}
+
+#recipe-instructions > ol {
+list-style: decimal;
+list-style-type: decimal;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 2em;
+}
+
+#recipe-instructions > ol li {
+margin: 0.5em 0;
+padding-left: 1em;
+}
+
+#recipe-instructions > ul {
+list-style: circle;
+list-style-type: circle;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 2em;
+}
+
+#recipe-instructions > ul li {
+margin: 0.5em 0;
+padding-left: 1em;
+}
+
+#recipe-instructions > dl {
+margin-top: 1em;
+margin-bottom: 1em;
+}
+
+#recipe-instructions > dt {
+font-weight: bold;
+}
+
+#recipe-instructions > dd {
+margin-left: 1em;
+}
+
+#recipe-instructions > sup {
+font-size: 0.83em;
+vertical-align: super;
+}
+
+#recipe-instructions > ins {
+text-decoration: underline;
+}
+
+#recipe-instructions > mark {
+background-color: yellow;
+}
+
+#recipe-instructions > b,
+#recipe-instructions > strong {
+font-weight: bold;
+}
+
+#recipe-instructions > i,
+#recipe-instructions > em {
+font-style: italic;
+}
+
+#recipe-instructions > sub {
+font-size: 0.83em;
+vertical-align: sub;
+}
+
+@media only screen and (max-width: 710px) {
+  #recipe-instructions {
+    width: inherit;
+  }
+  #recipe-instructions > :not(img){
+    padding-left: 5px;
+  }
+}
